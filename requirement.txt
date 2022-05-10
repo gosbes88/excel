@@ -1,0 +1,6 @@
+Webpack(imports/exports)
+  Babel
+  SCSS
+  ESLint
+  2 Mods (Dev, Prod)
+Git
