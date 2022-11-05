@@ -16,6 +16,9 @@
     "space-before-function-parentheses": 0,
     "space-before-function-paren": ["error", "always"],
     "indent": [2, "tab"],
-    "no-tabs": 0
+    "no-tabs": 0,
+    "operator-linebreak": "off",
+    "arrow-parens": "off",
+    "max-len": "off"
   }
 }
