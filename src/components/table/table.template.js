@@ -3,24 +3,28 @@ const CODES = Object.freeze({
 	Z: 90,
 });
 
-function createCell (content) {
+function createCell (content, index) {
 	return `
-		<div class="cell" contenteditable>${content}</div>
+		<div class="cell" contenteditable data-col="${index}">${content}</div>
 	`;
 }
 
-function createCol (el) {
+function createCol (el, index) {
 	return `
-		<div class="column">
+		<div class="column" data-type="resizable" data-col="${index}">
 			${el}
+			<div class="col-resize" data-resize="col"></div>
 		</div>
 	`;
 }
 
 function createRow (index, content) {
 	return `
-		<div class="row">
-			<div class="row-info">${index || ''}</div>
+		<div class="row" data-type="resizable">
+			<div class="row-info">
+				${index || ''}
+				${index ? `<div class="row-resize" data-resize="row"></div>` : ''}
+			</div>
 			<div class="row-data">${content}</div>
 		</div>
 	`;
