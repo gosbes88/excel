@@ -15,7 +15,7 @@
     "linebreak-style": 0,
     "space-before-function-parentheses": 0,
     "space-before-function-paren": ["error", "always"],
-    "indent": [2, "tab"],
+    "indent": "off",
     "no-tabs": 0,
     "operator-linebreak": "off",
     "arrow-parens": "off",

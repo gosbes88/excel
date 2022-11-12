@@ -1,10 +1,11 @@
 import {ExcelComponent} from '@core/ExcelComponent';
 
 export class Toolbar extends ExcelComponent {
-	constructor ($el) {
+	constructor ($el, options) {
 		super($el, {
 			name: 'Toolbar',
 			listeners: ['click'],
+			...options,
 		});
 	}
 
