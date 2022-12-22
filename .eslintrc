@@ -17,8 +17,10 @@
     "space-before-function-paren": ["error", "always"],
     "indent": "off",
     "no-tabs": 0,
+    "no-case-declarations": "off",
     "operator-linebreak": "off",
     "arrow-parens": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "comma-dangle": "off"
   }
 }
