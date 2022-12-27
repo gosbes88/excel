@@ -3,7 +3,7 @@ export function parse (value = '') {
 		try {
 			return eval(value.slice(1));
 		} catch (e) {
-			console.error(e.massage);
+			console.error(e.message);
 		}
 	}
 	return value
