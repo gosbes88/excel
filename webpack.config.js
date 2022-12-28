@@ -11,14 +11,7 @@ const isProd = !isDev;
 
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
 const jsLoader = () => {
-    const loaders = [
-        {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env']
-            }
-        }
-    ];
+    const loaders = ['babel-loader'];
     isDev && loaders.push('eslint-loader');
     return loaders;
 };
